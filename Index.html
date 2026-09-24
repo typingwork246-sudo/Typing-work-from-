@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Trulencar Typing Job</title>
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f4f8;
+  color: #222;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+
+/* =========================
+   TRULENCAR LOGO
+========================= */
+
+.brand {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.logo-box {
+  display: inline-block;
+
+  min-width: 285px;
+
+  padding: 13px 22px;
+
+  background: linear-gradient(
+    135deg,
+    #062b68,
+    #0b5cc7
+  );
+
+  border: 3px solid #f5bd18;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.22);
+}
+
+
+/* LOGO NAME */
+
+.logo-name {
+  color: #ffffff;
+
+  font-size: 32px;
+
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  letter-spacing: -1px;
+}
+
+.logo-name .yellow {
+  color: #ffd21c;
+}
+
+
+/* TYPING JOB */
+
+.logo-tagline {
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-top: 7px;
+}
+
+.logo-line {
+  display: inline-block;
+
+  width: 25px;
+
+  height: 2px;
+
+  background: #ffd21c;
+
+  vertical-align: middle;
+
+  margin: 0 5px;
+}
+
+
+/* =========================
+   TOP JOIN NOW
+========================= */
+
+.top-join {
+  display: block;
+
+  width: 190px;
+
+  margin: 14px auto 22px;
+
+  padding: 14px 10px;
+
+  background: #229ed9;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  text-align: center;
+
+  font-size: 17px;
+
+  font-weight: bold;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.18);
+}
+
+.top-join:active {
+  transform: scale(0.98);
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card {
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 28px 20px;
+
+  box-shadow:
+    0 5px 22px rgba(0,0,0,0.09);
+
+  text-align: center;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+h1 {
+
+  margin: 0 0 12px;
+
+  font-size: 28px;
+
+  line-height: 1.2;
+
+  color: #111827;
+}
+
+
+.subtitle {
+
+  margin: 0;
+
+  color: #606770;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   INFORMATION BOX
+========================= */
+
+.info-box {
+
+  margin-top: 20px;
+
+  padding: 18px;
+
+  background: #f6f8fb;
+
+  border-radius: 13px;
+
+  text-align: left;
+
+  border: 1px solid #e7ebf0;
+}
+
+
+.info-box h2 {
+
+  margin: 0 0 12px;
+
+  color: #123d78;
+
+  font-size: 19px;
+}
+
+
+.info-box p {
+
+  margin: 7px 0;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  color: #333333;
+}
+
+
+/* =========================
+   TELEGRAM BOX
+========================= */
+
+.telegram-box {
+
+  margin-top: 18px;
+
+  padding: 18px;
+
+  background: #eef8fc;
+
+  border-radius: 13px;
+
+  text-align: left;
+}
+
+
+.telegram-box h2 {
+
+  margin: 0 0 10px;
+
+  color: #168dcc;
+
+  font-size: 19px;
+}
+
+
+.telegram-box p {
+
+  margin: 0;
+
+  color: #444;
+
+  line-height: 1.6;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   SECOND JOIN NOW
+========================= */
+
+.join-now {
+
+  display: block;
+
+  width: 100%;
+
+  margin-top: 22px;
+
+  padding: 16px;
+
+  background: #229ed9;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  text-align: center;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.15);
+}
+
+.join-now:active {
+
+  transform: scale(0.98);
+
+}
+
+
+/* =========================
+   NOTICE
+========================= */
+
+.notice {
+
+  margin-top: 20px;
+
+  color: #666666;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+  text-align: center;
+
+  margin: 24px 0 10px;
+
+  color: #777777;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .page {
+    padding: 12px;
+  }
+
+  .logo-box {
+    min-width: 250px;
+    padding: 12px 15px;
+  }
+
+  .logo-name {
+    font-size: 28px;
+  }
+
+  .logo-tagline {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .card {
+    padding: 24px 16px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+  <!-- =====================
+       TRULENCAR LOGO
+  ====================== -->
+
+  <div class="brand">
+
+    <div class="logo-box">
+
+      <div class="logo-name">
+
+        <span class="yellow">Tru</span>lencar
+
+      </div>
+
+
+      <div class="logo-tagline">
+
+        <span class="logo-line"></span>
+
+        TYPING JOB
+
+        <span class="logo-line"></span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================
+       JOIN NOW
+       LOGO KE JUST NICHE
+  ====================== -->
+
+  <a
+    class="top-join"
+    href="https://t.me/+Qt-_eYRZHyhhYjFl"
+    target="_blank"
+    rel="noopener noreferrer">
+
+    JOIN NOW
+
+  </a>
+
+
+  <!-- =====================
+       MAIN CONTENT
+  ====================== -->
+
+  <div class="card">
+
+
+    <h1>
+      Typing Work Opportunity
+    </h1>
+
+
+    <p class="subtitle">
+
+      Explore information about available
+      online typing work and
+      project-related updates.
+
+    </p>
+
+
+    <!-- WORK INFORMATION -->
+
+    <div class="info-box">
+
+      <h2>
+        Work Information
+      </h2>
+
+      <p>
+        ✓ Online typing work information
+      </p>
+
+      <p>
+        ✓ Project updates
+      </p>
+
+      <p>
+        ✓ Work-related guidance
+      </p>
+
+      <p>
+        ✓ Application information
+      </p>
+
+    </div>
+
+
+    <!-- TELEGRAM -->
+
+    <div class="telegram-box">
+
+      <h2>
+        Get More Information
+      </h2>
+
+      <p>
+
+        Join our Telegram channel to view
+        the latest work-related announcements
+        and available information.
+
+      </p>
+
+    </div>
+
+
+    <!-- SECOND JOIN BUTTON -->
+
+    <a
+      class="join-now"
+      href="https://t.me/+Qt-_eYRZHyhhYjFl"
+      target="_blank"
+      rel="noopener noreferrer">
+
+      JOIN NOW
+
+    </a>
+
+
+    <!-- NOTICE -->
+
+    <p class="notice">
+
+      Please review all work details, terms
+      and conditions carefully before providing
+      personal information or making any payment.
+      Work availability and terms may vary.
+
+    </p>
+
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 Trulencar Typing Job
+
+    <br>
+
+    Please verify all information before proceeding.
+
+  </footer>
+
+
+</div>
+
+</body>
+</html>
